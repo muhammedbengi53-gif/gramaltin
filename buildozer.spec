@@ -1,21 +1,21 @@
 [app]
 
 # (str) Title of your application
-title = Gram Altin
+title = My Application
 
 android.permissions = CAMERA, INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 
 # (str) Package name
-package.name = gramaltin
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.sherlock.questionsolverapp
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas, ttf
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -39,7 +39,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements =  python3==3.7.6,hostpython3==3.7.6, kivy, pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -66,7 +66,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.7.6
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
@@ -103,7 +103,7 @@ fullscreen = 0
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 30
+#android.api = 31
 
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21
